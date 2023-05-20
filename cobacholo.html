@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Pestañas</title>
+  <style>
+  
+    /* Estilos para las pestañas */
+    .tab {
+      display: none;
+    }
+
+    /* Estilo para la pestaña activa */
+    .tab.active {
+      display: block;
+    }
+
+    /* Estilos para los enlaces de las pestañas */
+    .tab-link {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #ccc;
+      color: #fff;
+      text-decoration: none;
+      margin-right: 5px;
+    }
+  </style>
+</head>
+<body> 
+
+  <div class="tab-container">
+    <a href="#" class="tab-link" onclick="openTab(event, 'tab1')">Inicio</a>
+    <a href="#" class="tab-link" onclick="openTab(event, 'tab2')">Info</a>
+    <a href="#" class="tab-link" onclick="openTab(event, 'tab3')"> Descarga </a>
+    
+    <div id="tab1" class="tab active">
+      <h2></h2>
+      <p><img src="file:///C|/Users/Jesus/Documents/sitio cobacholo/imagenes/portada.png" width="736" height="443">.</p>
+    </div>
+
+    <div id="tab2" class="tab">
+      <h2 style="color:#666"> ¿de que se trata este juego? </h2>
+
+<h3> <strong> Este juego ha sido diseñado para ofrecer una experiencia divertida y agradable a todos aquellos que han asistido a una escuela y quieren recordar esos momentos especiales. Con este juego, puedes revivir la emoción y la alegría que experimentaste en la escuela, al mismo tiempo que te diviertes y compites con otros jugadores. Este juego te brinda la oportunidad de honrar tu alma mater de una manera única y emocionante. Descubre más sobre cómo jugar y cómo puedes unirte a otros jugadores para celebrar y conmemorar tu escuela.</strong></h3>
+<img src="file:///C|/Users/Jesus/Documents/sitio cobacholo/imagenes/cova.png" width="918" height="654">
+<h2 style="color:#666">¿Cual es la importancia de Proyectos como este?</h2>
+
+<h3>Crear un pequeño negocio desde la adolescencia puede tener una gran importancia en la vida de un joven emprendedor. No solo les brinda la oportunidad de generar ingresos adicionales y aprender habilidades empresariales prácticas, sino que también les enseña valores importantes como la responsabilidad, la toma de decisiones y el trabajo en equipo. Además, emprender desde una edad temprana puede fomentar la creatividad y la innovación, ya que los jóvenes emprendedores a menudo están dispuestos a probar nuevas ideas y enfoques. Esto puede ayudar a impulsar el espíritu empresarial y la economía local, y en última instancia, mejorar la calidad de vida en las comunidades. En resumen, crear un pequeño negocio desde la adolescencia puede tener una gran importancia en el desarrollo personal y profesional de un joven emprendedor, y puede ser una experiencia transformadora que les brinde habilidades y valores valiosos para toda la vida.</h3>
+<img src="file:///C|/Users/Jesus/Documents/sitio cobacholo/imagenes/AnimacionesPersonajePrincipal.png" width="600" height="100">
+    </div>
+
+    <div id="tab3" class="tab">
+      <h2>Descarga Nuestro Juego</h2>
+      <h2 style="color:#666">Paso 1 </h2>
+<h3> Abre el enlace de descarga proporcionado.</h3>
+<p><a href="https://www.mediafire.com/file/osgyikjaum7rloq/LaLeyendaDelCobacholo.rar/file">https://www.mediafire.com/file/osgyikjaum7rloq/LaLeyendaDelCobacholo.rar/file</a></p>
+<h2 style="color:#666">Paso 2 </h2>
+<h3> Una vez que se carga la página de descarga, haz clic en el botón "Descargar" para comenzar la descarga del archivo.</h3>
+<img src="file:///C|/Users/Jesus/Documents/sitio cobacholo/imagenes/boton de descarga.PNG" width="324" height="88">
+<h2 style="color:#666">Paso 3 </h2>
+<h3> Si aparece un mensaje emergente, haz clic en "Continuar" para permitir que se descargue el archivo..</h3>
+<h2 style="color:#666">Paso 4 </h2>
+<h3> La descarga comenzará automáticamente y se guardará en la ubicación predeterminada de descarga en tu computadora.</h3>
+<h2 style="color:#666">Paso 5 </h2>
+<h3> Espera a que se complete la descarga y disfruta del archivo descargado.</h3>
+    </div>
+    
+    </div>
+    
+  </div>
+
+  <script>
+    function openTab(evt, tabName) {
+      var i, tabcontent, tablinks;
+      tabcontent = document.getElementsByClassName("tab");
+      for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+      }
+      tablinks = document.getElementsByClassName("tab-link");
+      for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+      }
+      document.getElementById(tabName).style.display = "block";
+      evt.currentTarget.className += " active";
+    }
+  </script>
+</body>
+</html>
